@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<script> 
+function replaceVowel(a)
+{
+	var x=a.split('')
+	for(i=0;i<x.length;i++)
+	{
+		if (x[i]=="a"){
+			x[i]=1;
+		}
+		if (x[i]=="e"){
+			x[i]=2;
+		}
+		if (x[i]=="i"){
+			x[i]=3;
+		}
+		if (x[i]=="o"){
+			x[i]=4;
+		}
+		if (x[i]=="u"){
+			x[i]=5;
+		}
+
+	}
+	return x.join('');
+}
+var y = prompt("Enter the string");
+alert("after replacing : "+replaceVowel(y));
+</script>

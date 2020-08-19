@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<script>
+function testJackpot(a)
+{
+x=a.split(' ');
+return (x.every( v => v === x[0]));
+}
+
+a=prompt("enter a string with 4 letters with spaces");
+alert(testJackpot(a));
+</script>

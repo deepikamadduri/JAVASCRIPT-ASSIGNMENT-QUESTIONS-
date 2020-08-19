@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<script>
+function specialReverse(a,b)
+{
+var x=a.split(' ');
+for(i=0;i<x.length;i++)
+{
+   if (x[i][0]==b)
+   {
+      console.log(b)
+      x[i]=x[i].split('').reverse().join('')
+   }
+
+}
+return x.join(' ')
+}
+a=prompt("enter a string");
+b=prompt("enter a character");
+alert("The reversed string is :"+specialReverse(a,b));
+</script>
